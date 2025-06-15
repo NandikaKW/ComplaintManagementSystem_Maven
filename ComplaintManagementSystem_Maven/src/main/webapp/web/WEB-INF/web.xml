@@ -22,14 +22,14 @@
 <!--        <url-pattern>/ComplaintServlet</url-pattern>-->
 <!--    </servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>AdminComplaintServlet</servlet-name>
-        <servlet-class>controller.AdminComplaintServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>AdminComplaintServlet</servlet-name>
-        <url-pattern>/AdminComplaintServlet</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>AdminComplaintServlet</servlet-name>-->
+<!--        <servlet-class>controller.AdminComplaintServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>AdminComplaintServlet</servlet-name>-->
+<!--        <url-pattern>/AdminComplaintServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
 
 <!--    <servlet>-->
 <!--        <servlet-name>UpdateComplaintServlet</servlet-name>-->
@@ -40,23 +40,23 @@
 <!--        <url-pattern>/UpdateComplaintServlet</url-pattern>-->
 <!--    </servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>DeleteComplaintServlet</servlet-name>
-        <servlet-class>controller.DeleteComplaintServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>DeleteComplaintServlet</servlet-name>
-        <url-pattern>/DeleteComplaintServlet</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>DeleteComplaintServlet</servlet-name>-->
+<!--        <servlet-class>controller.DeleteComplaintServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>DeleteComplaintServlet</servlet-name>-->
+<!--        <url-pattern>/DeleteComplaintServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>controller.LogoutServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>LogoutServlet</servlet-name>
-        <url-pattern>/LogoutServlet</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>LogoutServlet</servlet-name>-->
+<!--        <servlet-class>controller.LogoutServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>LogoutServlet</servlet-name>-->
+<!--        <url-pattern>/LogoutServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
 
     <session-config>
         <session-timeout>30</session-timeout>
