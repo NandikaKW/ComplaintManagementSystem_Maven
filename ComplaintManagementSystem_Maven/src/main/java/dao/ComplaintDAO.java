@@ -80,6 +80,18 @@ public class ComplaintDAO {
         }
     }
 
+    public static boolean deleteComplaint(int id) {
+        try (Connection conn = DBConnection.getDataSource().getConnection();
+             PreparedStatement ps = conn.prepareStatement(
+                     "DELETE FROM complaints WHERE id = ?"
+             )) {
+            ps.setInt(1, id);
+            return ps.executeUpdate() > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 
 }
