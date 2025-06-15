@@ -92,6 +92,20 @@ public class ComplaintDAO {
             return false;
         }
     }
+    public static boolean updateComplaint(Complaint c) {
+        try (Connection conn = DBConnection.getDataSource().getConnection();
+             PreparedStatement ps = conn.prepareStatement(
+                     "UPDATE complaints SET title = ?, description = ? WHERE id = ?"
+             )) {
+            ps.setString(1, c.getTitle());
+            ps.setString(2, c.getDescription());
+            ps.setInt(3, c.getId());
+            return ps.executeUpdate() > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 
 }
