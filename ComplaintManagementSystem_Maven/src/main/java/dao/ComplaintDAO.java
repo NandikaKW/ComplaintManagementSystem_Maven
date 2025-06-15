@@ -66,5 +66,20 @@ public class ComplaintDAO {
         return list;
     }
 
+    public static boolean updateComplaintStatus(int id, String status) {  // Remove remarks parameter
+        try (Connection conn = DBConnection.getDataSource().getConnection();
+             PreparedStatement ps = conn.prepareStatement(
+                     "UPDATE complaints SET status = ? WHERE id = ?"  // Remove remarks from query
+             )) {
+            ps.setString(1, status);
+            ps.setInt(2, id);
+            return ps.executeUpdate() > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+
 
 }
